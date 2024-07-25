@@ -14,7 +14,7 @@
         public void UnEquip()
         {
             Console.WriteLine($"플레이어가 {curArmor.name} 을/를 해제합니다.");
-            curArmor.OnBreaked -= UnEquip;
+            curArmor.OnBreaked -= UnEquip; //이미 갑옷을 해제한 상황이기에 - 해준다.
             curArmor = null;
         }
 
